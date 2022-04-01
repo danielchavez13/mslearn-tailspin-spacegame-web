@@ -53,7 +53,7 @@ namespace TailSpin.SpaceGame.Web
         public Task<IEnumerable<T>> GetItemsAsync(
             Func<T, bool> queryPredicate,
             Func<T, int> orderDescendingPredicate,
-            int page = 1, int pageSize = 10
+            int page, int pageSize = 10
         )
         {
             var result = _items
